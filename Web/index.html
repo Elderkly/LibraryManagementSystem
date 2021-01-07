@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="index.css" type="text/css" rel="stylesheet"/>
+    <title>Document</title>
+</head>
+<body>
+    <div class="loginBox">
+        <div>
+            <span>用户名：</span>
+            <input type="text" placeholder="请输入用户名" class="input_name">
+        </div>
+        <div>
+            <span>密&nbsp&nbsp&nbsp码：</span>
+            <input type="password" placeholder="请输入密码" class="input_pwd">
+        </div>
+        <div>
+            <div class="btn_l">确定</div>
+            <div class="btn_r">取消</div>
+        </div>
+    </div>
+    <div class="mainBox">
+        <div class="top_menu">
+            <div class="menu_items">图书信息管理</div>
+            <div class="menu_items">读者信息维护</div>
+            <div class="menu_items">借阅管理</div>
+            <div class="menu_items">查询管理</div>
+            <div class="menu_items">系统管理</div>
+        </div>
+        <div class="child_menu">
+            <div>
+                <div onclick="render.renderAddBook()">录入</div>
+                <div onclick="render.renderUpdateBook()">修改</div>
+                <div onclick="render.renderDeleteBook()">删除</div>
+                <div onclick="render.renderBookSearchModule()">查询</div>
+            </div>
+            <div>
+                <div onclick="render.renderAddReader()">录入</div>
+                <div onclick="render.renderUpdateReader()">修改</div>
+                <div onclick="render.renderDeleteReader()">删除</div>
+                <div onclick="render.renderReaderSearchModule()">查询</div>
+            </div>
+            <div>
+                <div onclick="render.renderBorrowBook()">借书</div>
+                <div onclick="render.renderBackBook()">还书</div>
+            </div>
+            <div>
+                <div onclick="render.renderBookSearchModule()">图书信息查询</div>
+                <div onclick="render.renderReaderSearchModule()">读者信息查询</div>
+            </div>
+            <div>
+                <div onclick="render.renderChangePwd()">修改密码</div>
+                <div onclick="logOut()">退出系统</div>
+            </div>
+        </div>
+    </div>
+    <div class="fixedBox">
+        <div class="background" onclick="render.hidden()"></div>
+    </div>
+</body>
+</html>
+<script src="common.js"></script>
+<script src="render.js"></script>
+<script src="form.js"></script>
+<script src="index.js"></script>
